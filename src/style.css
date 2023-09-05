@@ -5,3 +5,13 @@
   --color-text-body: #9e9fa0;
   --color-text-dark: #141414;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+input,
+button {
+  font-family: 'Roboto', sans-serif;
+}
