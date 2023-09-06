@@ -1,9 +1,18 @@
 :root {
   --color-accent: #ff5c4c;
+  --color-accent-hover: #cf4437;
   --color-bg-nav: #ffffff;
   --color-bg: #f5f9fa;
   --color-text-body: #9e9fa0;
   --color-text-dark: #141414;
+}
+
+/* General settings */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
 html {
@@ -12,6 +21,139 @@ html {
 
 html,
 input,
+input::placeholder,
 button {
   font-family: 'Roboto', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+/* Flex settings */
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-vcenter {
+  align-items: center;
+}
+
+.flex-gap-20 {
+  gap: 20px;
+}
+
+.flex-gap-5 {
+  gap: 5px;
+}
+
+/* Grid settings */
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Body */
+
+body {
+  background-color: var(--color-bg);
+}
+
+/* App */
+
+#app {
+  margin: 0 auto;
+  max-width: max(1200px, 70%);
+}
+
+/* Nav */
+
+.nav {
+  background-color: var(--color-bg-nav);
+  justify-content: space-between;
+  padding: 0 10px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  margin-top: 50px;
+}
+
+#nav-links {
+  gap: 20px;
+}
+
+/* Texts */
+
+.text-dark {
+  color: var(--color-text-dark);
+}
+
+.text-body {
+  color: var(--color-text-body);
+}
+
+/* links */
+
+.link {
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.6rem;
+  transition: all 150ms;
+}
+
+.link:hover {
+  color: var(--color-accent);
+  text-decoration: 2px underline;
+  text-underline-offset: 5px;
+}
+
+/* Buttons */
+
+.btn {
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 7px;
+  font-size: 1.5rem;
+}
+
+.btn-primary {
+  background-color: var(--color-accent);
+  color: #ffffff;
+  font-weight: bold;
+  transition: all 150ms;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent-hover);
+}
+
+/* Icons */
+
+.mid-icon {
+  font-size: 20px;
+}
+
+.big-icon {
+  font-size: 30px;
+}
+
+.accent-icon {
+  color: var(--color-accent);
+}
+
+/* Logo */
+
+.logo {
+  font-size: 2.8rem;
+  font-weight: bold;
 }

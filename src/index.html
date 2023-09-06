@@ -15,52 +15,56 @@
 
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
+
+    <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
   </head>
   <body>
-    <header>
-      <div>
-        <p>Evently.</p>
-      </div>
-      <nav>
+    <div id="app">
+      <header class="nav flex flex-row flex-vcenter">
         <div>
-          <ul>
-            <li>Home</li>
-            <li>Services</li>
-            <li>Events</li>
-            <li>Become a suplier</li>
-          </ul>
+          <p class="text-dark logo">Evently.</p>
+        </div>
+        <nav>
+          <div class="flex flex-vcenter flex-gap-20">
+            <ul id="nav-links" class="flex flex-row">
+              <li><a class="link text-dark" href="#">Home</a></li>
+              <li><a class="link text-dark" href="#">Services</a></li>
+              <li><a class="link text-dark" href="#">Events</a></li>
+              <li><a class="link text-dark" href="#">Become a suplier</a></li>
+            </ul>
+            <i class="ph ph-magnifying-glass mid-icon"></i>
+            <div class="flex flex-vcenter flex-gap-5">
+              <button class="btn btn-primary">Join the Campaign</button>
+              <i class="ph-bold ph-dots-nine big-icon accent-icon"></i>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main class="grid grid-cols-2">
+        <div>
+          <p>#Pet Care</p>
+          <h2>Refining the world</h2>
+          <h2>one pet at a time</h2>
+          <p>
+            The cat is a small carnivorous mammal. It is only species in the
+            family Felidae and often referred to...
+          </p>
+          <input type="text" placeholder="$ 10.00" />
+          <button>Donate Now</button>
         </div>
         <div>
-          <span>icon search</span>
-          <button>Join the Campaign</button>
-          <span>icon squares</span>
+          <img src="https://placehold.co/400" alt="" />
         </div>
-      </nav>
-    </header>
-    <main>
-      <div>
-        <p>#Pet Care</p>
-        <h2>Refining the world</h2>
-        <h2>one pet at a time</h2>
-        <p>
-          The cat is a small carnivorous mammal. It is only species in the
-          family Felidae and often referred to...
-        </p>
-        <input type="text" placeholder="$ 10.00" />
-        <button>Donate Now</button>
-      </div>
-      <div>
-        <img src="https://placehold.co/400" alt="" />
-      </div>
-    </main>
-    <footer>
-      <p>&reg; All Rights Reserved.</p>
-      <div>
-        <a href="#">Twitter/X</a>
-        <a href="#">Facebook</a>
-        <a href="#">Linkedin</a>
-        <span>share icon</span>
-      </div>
-    </footer>
+      </main>
+      <footer>
+        <p>&reg; All Rights Reserved.</p>
+        <div>
+          <a href="#">Twitter/X</a>
+          <a href="#">Facebook</a>
+          <a href="#">Linkedin</a>
+          <span>share icon</span>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
