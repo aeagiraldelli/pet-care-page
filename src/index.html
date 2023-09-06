@@ -12,6 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
@@ -22,7 +26,7 @@
     <div id="app">
       <header class="nav flex flex-row flex-vcenter">
         <div>
-          <p class="text-dark logo">Evently.</p>
+          <p class="text-dark logo clickable">Evently.</p>
         </div>
         <nav>
           <div class="flex flex-vcenter flex-gap-20">
@@ -32,28 +36,36 @@
               <li><a class="link text-dark" href="#">Events</a></li>
               <li><a class="link text-dark" href="#">Become a suplier</a></li>
             </ul>
-            <i class="ph ph-magnifying-glass mid-icon"></i>
+            <i class="ph ph-magnifying-glass mid-icon clickable"></i>
             <div class="flex flex-vcenter flex-gap-5">
               <button class="btn btn-primary">Join the Campaign</button>
-              <i class="ph-bold ph-dots-nine big-icon accent-icon"></i>
+              <i class="ph-bold ph-dots-nine big-icon accent clickable"></i>
             </div>
           </div>
         </nav>
       </header>
-      <main class="grid grid-cols-2">
+      <main class="grid grid-cols-2 grid-vcenter">
         <div>
-          <p>#Pet Care</p>
-          <h2>Refining the world</h2>
-          <h2>one pet at a time</h2>
-          <p>
+          <p class="logo">#Pet Care</p>
+          <h2 class="text-big text-dark text-no-margin">
+            <span class="accent">Refining</span> the world
+          </h2>
+          <h2 class="text-big text-dark text-no-margin">one pet at a time</h2>
+          <p class="text-body">
             The cat is a small carnivorous mammal. It is only species in the
             family Felidae and often referred to...
           </p>
-          <input type="text" placeholder="$ 10.00" />
-          <button>Donate Now</button>
+          <div class="donate-box">
+            <span>$</span>
+            <input type="number" placeholder="10.00" min="0" />
+            <button class="btn">
+              <i class="ph ph-hand-heart mid-icon"></i>
+              Donate Now
+            </button>
+          </div>
         </div>
-        <div>
-          <img src="https://placehold.co/400" alt="" />
+        <div class="grid-self-hcenter">
+          <img src="assets/img/siberian-cat.png" alt="" />
         </div>
       </main>
       <footer>
